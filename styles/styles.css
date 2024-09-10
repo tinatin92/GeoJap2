@@ -885,3 +885,51 @@ color: #fff;
    
    cursor: pointer;
 }
+.project-slide{
+  display: flex;
+
+}
+
+.slider-content h2{
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 150%;
+}
+.slider-text{
+  max-width: 550px;
+}
+.slider-content{
+  width: 45%;
+}
+.used-tec{
+  margin-top: 50px;
+}
+.used-tec h4{
+  font-size: 24px;
+  font-weight: 500;
+}
+.used-tec ul{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.used-tec ul li{
+  list-style: none;
+}
+.slider-img{
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+}
+.slider-img__image{
+  width: 650px;
+  height: 600px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.slider-img__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

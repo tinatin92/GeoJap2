@@ -31,3 +31,19 @@ if (targetSection) {
     behavior: 'smooth'
   });
 }
+
+const projectSwiper = new Swiper('.project-slider', {
+    
+  speed: 1000,
+  loop: true,
+  effect: 'fade',
+ 
+  autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+  },
+ /*  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  }, */
+});
