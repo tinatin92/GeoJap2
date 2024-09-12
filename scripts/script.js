@@ -42,6 +42,33 @@ const projectSwiper = new Swiper('.project-slider', {
   }, */
 });
 
+const header = document.querySelector('header')
+const burgerIcon = document.querySelector('.burger-icon')
+const navigation = document.querySelector('.navigation')
+const navLinks = document.querySelectorAll('.nav-link');
+
+
+burgerIcon.addEventListener('click', () =>{
+
+  navigation.classList.toggle('open'); // Add or remove 'open' class to show/hide the menu
+ 
+
+
+  header.classList.toggle('white');
+
+})
+
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+     
+      navigation.classList.remove('open'); // Remove 'open' to ensure it's offscreen
+      header.classList.remove('white');
+  });
+});
+
+
+
 /* var targetSection = document.querySelector(targetSectionId);
 
 if (targetSection) {

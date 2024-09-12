@@ -380,7 +380,7 @@ svg {
     right: 0;
     color: #fff;
     padding: 24px;
-   
+   transition: all .3s;
     z-index: 100;
   }
   .header{
@@ -412,7 +412,7 @@ svg {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    z-index: 100;
+    z-index: 90;
 
     width: 70%;
     text-align: center;
@@ -1058,4 +1058,12 @@ color: #fff;
  text-decoration: none;
  font-size: 24px;
  font-weight: 500;
+}
+.burger-icon {
+  font-size: 56px;
+  display: none;
+}
+.navigation{
+  position: relative;
+  z-index: 1000;
 }
