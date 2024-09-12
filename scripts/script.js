@@ -22,8 +22,27 @@ document.addEventListener('DOMContentLoaded', () => {
     move();
 });
 
+const projectSwiper = new Swiper('.project-slider', {
+    
+  speed: 1000,
+  loop: true,
+  effect: 'fade',
+ 
+ /*  autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+  }, */
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+ /*  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  }, */
+});
 
-var targetSection = document.querySelector(targetSectionId);
+/* var targetSection = document.querySelector(targetSectionId);
 
 if (targetSection) {
   window.scrollTo({
@@ -32,18 +51,4 @@ if (targetSection) {
   });
 }
 
-const projectSwiper = new Swiper('.project-slider', {
-    
-  speed: 1000,
-  loop: true,
-  effect: 'fade',
- 
-  autoplay: {
-      delay: 2500,
-      disableOnInteraction: true,
-  },
- /*  pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-  }, */
-});
+ */

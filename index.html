@@ -5,28 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/icon.css">
-   
+     <link rel="stylesheet" href="styles/responcive.css">
+
 </head>
 
 <body>
     <!-- Hader -->
     <header class="container">
         <div class="header">
-            <div>
+            <a class="header-logo" href="">
                 <span class="icon-Frame-2491 logo"></span>
-            </div>
+            </a>
             <div>
                 <nav>
                     <a href="#about-us">About Us</a>
-                    <a href="#about-us">What we offer</a>
-                    <a href="#about-us">Why GeoJap</a>
-                    <a href="#about-us">Projects</a>
-                    <a href="#about-us">Projects</a>
+                    <a href="#offer">What we offer</a>
+                    <a href="#why-us">Why GeoJap</a>
+                    <a href="#projects">Projects</a>
                 </nav>
             </div>
+            <span class="icon-svgexport-24-1-1 burger-icon"></span> <!--burger icon-->
         </div>
 
     </header>
@@ -41,7 +43,7 @@
             <div>
                 კეთილი იყოს თქვენი მობრძანება საქართველოში
             </div>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
 
         </div>
         <!--Hero section background-->
@@ -88,7 +90,7 @@
     <section id="about-us" class="container about-us margin-100">
         <div class="flex">
             <div class="width-50">
-                <span class="icon-svgexport-20-28 fly"></span>
+                <span class="icon-Vector1 fly"></span>
 
             </div>
             <div class="width-50 about-us__info">
@@ -107,7 +109,7 @@
     </section>
 
 
-    <section class="offer-section container">
+    <section id="offer" class="offer-section container">
 
         <div class="offers">
             <span class="icon-Frame-2491 grid-logo"></span>
@@ -182,7 +184,7 @@
     </section>
 
 
-    <section class="container margin-100">
+    <section id="why-us" class="container margin-100">
         <h1 class="h1 margin-bottom-100">Why GeoJap</h1>
         <div class="why-us">
             <div class="whu-us__box">
@@ -226,18 +228,22 @@
     </section>
 
 
-    <section class="project margin-100 container">
+    <section id="projects" class="project margin-100 container">
         <h1 class="h1 margin-bottom-100">Our Projects</h1>
 
-        <div class="project-slider swiper-container">
+
+
+        <div class="swiper-container project-slider">
             <div class="swiper-wrapper">
                 <div class="project-slide swiper-slide">
                     <div class="slider-content">
                         <div>
-                            <h2>Memo Tours</h2>
+                            <h2>Memo Tours 2</h2>
                             <div class="slider-text">
-                                From concept to launch, we handle every aspect of the project lifecycle. Whether you need
-                                graphic design, UI/UX, or development, we provide a seamless and integrated approach that
+                                From concept to launch, we handle every aspect of the project lifecycle. Whether you
+                                need
+                                graphic design, UI/UX, or development, we provide a seamless and integrated approach
+                                that
                                 saves
                                 you time and hassle
                             </div>
@@ -252,11 +258,19 @@
                                 <li>Figma</li>
                             </ul>
                         </div>
-    
+
+                        <div class="visit-web">
+
+                            <a href="https://memotours.ge/" target="_blank">
+                                <span>Visit:</span>
+                                <span>www.memotours.ge</span>
+                            </a>
+                        </div>
+
                     </div>
                     <div class="slider-img">
                         <div class="slider-img__image">
-                            <img src="assets/images/image 16.png" alt="">
+                            <img src="assets/images/image 13.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -265,8 +279,10 @@
                         <div>
                             <h2>Memo Tours 2</h2>
                             <div class="slider-text">
-                                From concept to launch, we handle every aspect of the project lifecycle. Whether you need
-                                graphic design, UI/UX, or development, we provide a seamless and integrated approach that
+                                From concept to launch, we handle every aspect of the project lifecycle. Whether you
+                                need
+                                graphic design, UI/UX, or development, we provide a seamless and integrated approach
+                                that
                                 saves
                                 you time and hassle
                             </div>
@@ -281,7 +297,15 @@
                                 <li>Figma</li>
                             </ul>
                         </div>
-    
+
+                        <div class="visit-web">
+
+                            <a href="https://memotours.ge/" target="_blank">
+                                <span>Visit:</span>
+                                <span>www.memotours.ge</span>
+                            </a>
+                        </div>
+
                     </div>
                     <div class="slider-img">
                         <div class="slider-img__image">
@@ -289,15 +313,23 @@
                         </div>
                     </div>
                 </div>
-            </div>
-           
 
-           
+            </div>
+
+
+
         </div>
-      
+
+        <div class="slider-buttons">
+            <div class="swiper-button-next icon-svgexport-20-22-3 btn-icon"></div>
+            <div class="swiper-button-prev icon-svgexport-20-22-32 btn-icon">
+
+            </div>
+        </div>
+
     </section>
 
-    <section class="contact margin-100">
+    <section id="contact" class="contact margin-100">
         <div class="container flex">
             <div class="width-50 contact-us">
                 <h3>Contact us</h3>
@@ -362,15 +394,15 @@
     <footer>
         <div class="container">
             <div class="footer">
-                <div>
+                <div class="footer-icon">
                     <span class="icon-Frame-2491 logo"></span>
                 </div>
                 <div class="footer-info">
                     <nav>
                         <a href="#about-us">About Us</a>
-                        <a href="">What we offer</a>
-                        <a href="">Why GeoJap</a>
-                        <a href="">Projects</a>
+                        <a href="#offer">What we offer</a>
+                        <a href="#why-us">Why GeoJap</a>
+                        <a href="#projects">Projects</a>
 
                     </nav>
                     <div class="footer-contact">
@@ -401,8 +433,8 @@
         </div>
     </footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script src="scripts/script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
