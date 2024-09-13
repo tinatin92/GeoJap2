@@ -449,7 +449,9 @@
     width: 100%;
     margin: 0 32px;
 }
-
+.offer-grid{
+    padding: 0 0 0 32px;
+}
 
 }
 
@@ -469,7 +471,10 @@
         flex-direction: column;
         gap: 32px;
     }
-
+    .offer-item:first-of-type, .offer-item, .offer-grid-intro {
+        width: 330px;
+        height: 400px;
+    }
 
 
 

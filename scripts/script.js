@@ -67,7 +67,9 @@ navLinks.forEach(link => {
   });
 });
 
-
+Fancybox.bind('[data-fancybox="gallery"]', {
+  // Your custom options for a specific gallery
+});
 
 /* var targetSection = document.querySelector(targetSectionId);
 
