@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {
+/* @font-face {
   font-family: "TBC Contractica";
   src: url("../assets/fonts/TBCContractica-Bold.woff2") format("woff2"),
     url("../assets/fonts/TBCContractica-Bold.woff") format("woff");
@@ -71,7 +71,7 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 html{
   scroll-behavior: smooth;
@@ -91,10 +91,7 @@ body{
   box-sizing: border-box;
   font-family: "Urbanist", system-ui;
 }
-body:lang(ka),
-*:lang(ka){
-  font-family: "TBC Contractica";
-}
+
 h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0;
@@ -136,7 +133,25 @@ img{
     --blending: hard-light;
 
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .container {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
@@ -397,11 +412,27 @@ svg {
  }
  .header nav a{
   text-decoration: none;
-
+  position: relative;
   font-weight: 500;
   color: #fff;
  }
-  
+
+ .header nav a::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all .3s;
+ }
+ .header nav a:hover::after{
+  transform: scale(1);
+ }
+
   .hero-text{
     display: flex;
     flex-direction: column;
