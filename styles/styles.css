@@ -1003,6 +1003,7 @@ color: #fff;
 }
 .slider-content{
   padding: 0 20px 0 0;
+  background-color: #fff;
 }
 
 .slider-content h2{
@@ -1027,10 +1028,26 @@ color: #fff;
 .used-tec ul{
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 .used-tec ul li{
   list-style: none;
+  position: relative;
+  
+}
+.used-tec ul li::before{
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background-color: #000;
+  border-radius: 50%;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.used-tec ul li:hover::before{
+  background: -webkit-linear-gradient(#7209B7, #4CC9F0);
 }
 .slider-img{
   width: 55%;
@@ -1099,4 +1116,7 @@ color: #fff;
 .navigation{
   position: relative;
   z-index: 1000;
+}
+.visit-web a:hover{
+  text-decoration: underline;
 }
