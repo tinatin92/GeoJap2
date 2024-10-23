@@ -44,6 +44,14 @@
                     <a class="nav-link" href="#projects">Projects</a>
                 </nav>
             </div>
+            <div class="lang">
+                <select name="lang" id="lang">
+                    <option value="ka">Geo</option>
+                    <option value="en">Eng</option>
+                    <option value="ja">Jap</option>
+                </select>
+
+            </div>
             <span class="icon-svgexport-24-1-1 burger-icon"></span> <!--burger icon-->
         </div>
 
@@ -56,24 +64,26 @@
             <h1>Welcome to GeoJap: Bridging Cultures, Building Excellence</h1>
             <div>Ready to take your brand to the next level? Contact us today, and let's start building something
                 extraordinary together.</div>
-            <div>
-                კეთილი იყოს თქვენი მობრძანება საქართველოში
-            </div>
+            
             <a href="#contact">Contact</a>
 
         </div>
         <!--Hero section background-->
         <div class="gradient-bg">
-            <svg xmlns="http://www.w3.org/2000/svg">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
                 <defs>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-                            result="goo" />
-                        <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="
+                       1 0 0 0 0  
+                       0 1 0 0 0  
+                       0 0 1 0 0  
+                       0 0 0 20 -10" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                  </filter>
                 </defs>
-            </svg>
+              </svg>
+              
             <div class="gradients-container">
                 <div class="g1"></div>
                 <div class="g2"></div>
