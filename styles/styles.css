@@ -385,7 +385,11 @@ svg {
 
     opacity: 0.7;
   }
-
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
 .lang{
   width: 100px;
   display: flex;

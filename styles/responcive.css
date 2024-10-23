@@ -250,6 +250,10 @@
     .navigation.open {
         transform: translateX(0); /* Slide into view */
     }
+    .menu {
+        margin-left: auto;
+        margin-right: 30px;
+    }
    
     header.white{
         background-color: #fff;
